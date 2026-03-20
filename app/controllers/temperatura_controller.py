@@ -27,15 +27,6 @@ def obtener_datos():
     conn.close()
 
     datos = [{"id": r[0], "valor": r[1]} for r in rows]
-    edades= [12,48,23,15,17]
-    def ordenar():
-        global n
-        n = len(edades)
-        for i in range(n-1):
-            for j in range(i+1,n):
-                if edades [i] > edades [j]:
-                    aux = edades [i]
-                    edades [i] = edades [j]
-                    edades [j] = aux
-        return edades
-    return {"datos": datos, "lista ordenada": edades, "Longitud:": n}
+    cant = len(datos)
+    
+    return {"datos": datos, "Longitud:": cant}
