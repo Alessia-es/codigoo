@@ -15,6 +15,8 @@ def guardar_temperatura(valor: float):
     conn.close()
 
     return {"mensaje": "Guardado en DB", "valor": valor}
+
+
 # 🔹 SELECT
 def obtener_datos():
     conn = get_connection()
@@ -27,6 +29,5 @@ def obtener_datos():
     conn.close()
 
     datos = [{"id": r[0], "valor": r[1]} for r in rows]
-    cant = len(datos)
-    
-    return {"datos": datos, "longitud": cant}
+    cantidad= len(datos)
+    return {"datos": datos, "longitud": cantidad}
