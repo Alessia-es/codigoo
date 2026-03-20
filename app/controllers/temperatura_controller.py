@@ -29,6 +29,7 @@ def obtener_datos():
     datos = [{"id": r[0], "valor": r[1]} for r in rows]
     edades= [12,48,23,15,17]
     def ordenar():
+        global n
         n = len(edades)
         for i in range(n-1):
             for j in range(i+1,n):
