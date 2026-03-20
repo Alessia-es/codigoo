@@ -29,4 +29,4 @@ def obtener_datos():
     datos = [{"id": r[0], "valor": r[1]} for r in rows]
     cant = len(datos)
     
-    return {"datos": datos, "Longitud:": cant}
+    return {"datos": datos, "longitud": cant}
