@@ -29,5 +29,5 @@ def obtener_datos():
     conn.close()
 
     datos = [{"id": r[0], "valor": r[1]} for r in rows]
-    cantidad= len(datos)
-    return {"datos": datos, "longitud": cantidad}
+
+    return {"datos": datos}
