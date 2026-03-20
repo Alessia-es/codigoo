@@ -29,5 +29,5 @@ def obtener_datos():
     conn.close()
 
     datos = [{"id": r[0], "valor": r[1]} for r in rows]
-    edaes = [{"id": r[0], "valor": r[1]} for r in rows]
+    edades = [{"id": r[0], "valor": r[1]} for r in rows]
     return {"datos": datos, "edades": edades}
