@@ -27,17 +27,14 @@ def obtener_datos():
     conn.close()
 
     datos = [{"id": r[0], "valor": r[1]} for r in rows]
-    list = [12,12,34,26,37,15]
-    def mostrar():
-        for i in range(n):
-            print(lis[i])
+    edades= [12,48,23,15,17]
     def ordenar():
-        n = len(list)
+        n = len(edades)
         for i in range(n-1):
             for j in range(i+1,n):
-                if list [i] > list [j]:
-                    aux = list [i]
-                    list [i] = list [j]
-                    list [j] = aux
-        
-    return {"datos": datos, "lista ordenada": list}
+                if edades [i] > edades [j]:
+                    aux = edades [i]
+                    edades [i] = edades [j]
+                    edades [j] = aux
+    
+    return {"datos": datos, "lista ordenada": suma, "Longitud:": n}
