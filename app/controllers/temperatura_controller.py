@@ -16,7 +16,7 @@ def guardar_temperatura(valor: float):
 
     return {"mensaje": "Guardado en DB", "valor": valor}
 
-
+list = [12,12,34,26,37,15]
 # 🔹 SELECT
 def obtener_datos():
     conn = get_connection()
@@ -29,14 +29,14 @@ def obtener_datos():
     conn.close()
 
     datos = [{"id": r[0], "valor": r[1]} for r in rows]
-    list = [12,12,34,26,37,15]
+    
     def ordenar():
         n = len(list)
         for i in range(n-1):
             for j in range(i+1,n):
-                if lista[i] > lista[j]:
-                    aux= list[i]
-                    list[i] = list[j]
-                    list[j] = aux
+                if list [i] > list [j]:
+                    aux= list [i]
+                    list [i] = list [j]
+                    list [j] = aux
         return list
     return {"datos": datos, "lista": list}
