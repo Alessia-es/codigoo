@@ -37,5 +37,5 @@ def obtener_datos():
                     aux = edades [i]
                     edades [i] = edades [j]
                     edades [j] = aux
-    
-    return {"datos": datos, "lista ordenada": suma, "Longitud:": n}
+        return n
+    return {"datos": datos, "lista ordenada": edades, "Longitud:": n}
